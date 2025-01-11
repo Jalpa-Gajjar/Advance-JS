@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Information</h1>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Product Info</th>
+                    <th>Quantity</th>
+                    <th>Price per Unit</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="tr1">
+                    <th><img src="images/image1.webp" height="35px" width="35px" style="border-radius: 50%;" alt=""><br>Fortunata window Hardware- Decorarive Holdbacks - Mocha</th>
+                    <th><input type="number" class="inp" value="2"></th>
+                    <th>$<p class="curPrice">29.99</p></th>
+                    <th>$<p class="tprice">59.98</p></th>
+                    <th><button id="remove" onclick="remove(tr1)">Remove</button></th>
+                </tr>
+                <tr id="tr2">
+                    <th><img src="images/image3.jfif" height="35px" width="35px" style="border-radius: 50%;" alt=""><br>Woven Trellis window Hardware- Clip Rings - Bronze</th>
+                    <th><input type="number" class="inp" value="1"></th>
+                    <th>$<p class="curPrice">12.99</p></th>
+                    <th>$<p class="tprice">12.99</p></th>
+                    <th><button id="remove" onclick="remove(tr2)">Remove</button></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>$<b class="total">98.99</b></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
